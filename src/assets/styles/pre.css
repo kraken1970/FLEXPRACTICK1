@@ -7,8 +7,9 @@ a, a:hover, button, button:hover, .anime {
   cursor: pointer;
 }
 
-li {
+li, a {
   list-style-type: none;
+  text-decoration: none;
 }
 
 .main-flex {

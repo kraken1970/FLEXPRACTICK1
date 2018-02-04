@@ -17,8 +17,70 @@ header {
   width: 100%;
   height: 11.57vh;
   background-color: #ffffff;
-  & img {
+   img {
     height: 5.64vh;
     width: 6vw;
+  }
+}
+
+#main_nav {
+   a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 0.93vmax;
+    text-shadow: 0.5px 0.9px 4px rgba(0, 0, 0, 0.2);
+    line-height: 1.66vmax;/*vmax - размер по максимальной грани*/
+    height: 3.22vmax;
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-content: center;
+    align-items: center;
+    padding-right: 1.3vmax;
+    background-color: #2f373b;
+    background: linear-gradient(to bottom, rgba(30,87,153,1) 0%,rgba(50,58,62,1) 0%,rgba(46,54,58,1) 98%,rgba(46,54,58,1) 98%);
+  }
+   a:hover,
+   a.active {
+    background-color: #1ab5b3;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.01) 0%, rgba(255, 255, 255, 0.01) 100%);
+  }
+}
+
+#filter {
+  padding-right: 1.3vmax;
+  background-color: #242b2e;
+  padding-bottom: 1.35vmax;
+  border-bottom: 1px solid #1e282b;
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    text-align: right;
+  }
+   a {
+    font-size: 0.67vmax;
+    line-height: 1.25vmax;
+    color: #6b7072;
+    text-shadow: 0.5px 0.9px 4px rgba(0, 0, 0, 0.2);
+  }
+  a:hover,
+  a.active {
+    color: #ffffff;
+  }
+}
+
+#title_filter {
+  color: #1ab5b3;
+  fill: #1ab5b3;
+  font-size: 0.98vmax;
+  padding: 1.25vmax 0;
+  svg {
+    width: 0.9vmax;
+    height: 0.9vmax;
+    margin-left: 0.62vmax;
   }
 }
