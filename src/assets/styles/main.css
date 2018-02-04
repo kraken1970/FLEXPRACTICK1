@@ -54,6 +54,7 @@ header {
   background-color: #242b2e;
   padding-bottom: 1.35vmax;
   border-bottom: 1px solid #1e282b;
+  width: 100%;
   ul {
     margin: 0;
     padding: 0;
@@ -83,4 +84,31 @@ header {
     height: 0.9vmax;
     margin-left: 0.62vmax;
   }
+}
+
+#soc_bar {
+  padding-top: 1.51vmax;
+  padding-right: 1.3vmax;
+  font-size: 0;/* так же как dib*/
+  a {
+    margin-left: 0.36vmax;
+    opacity: 0.5;
+  }
+  a:hover {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  img {
+    width: 1.25vmax;
+    height: 1.25vmax;
+  }
+}
+
+p#cop {
+  text-align: right;
+  color: #6b7072;
+  font-size: 0.625vmax;
+  line-height: 1.3vmax;
+  margin-top: 0.9375vmax;
+  margin-right: 1.3vmax;
 }
