@@ -770,8 +770,8 @@ header {
   background-color: #242b2e;
   color: #6b7072;
   font-family: 'RalewayRegular';
-  -webkit-box-shadow: 8px 0px 14px #848484;
-          box-shadow: 8px 0px 14px #848484;
+      -webkit-box-shadow: 8px 0px 14px rgba(114, 106, 106, 0.9);
+              box-shadow: 8px 0px 14px rgba(114, 106, 106, 0.9);
 }
 
 #logo{
@@ -956,6 +956,7 @@ main {
         -ms-flex-align: center;
             align-items: center;
     text-decoration: none;
+    opacity: 0;
   }
 
 .work_box .arrow {
@@ -973,11 +974,9 @@ main {
   }
 
 .work_box h3 {
-    position: relative;
     margin: 0;
     font-size: 0.62vw;
     font-weight: 400;
-    margin-bottom: 1.82vw;
   }
 
 .work_box h3::after {
@@ -985,10 +984,26 @@ main {
     width: 100%;
     height: 1px;
     background-color: #fff;
-    position: absolute;
-    top: 1.5625vw;
-    left: 0;
+    display: block;
+    margin: 1vw auto;
   }
+
+.work_box a:hover {
+    opacity: 1;
+  }
+
+#info {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 5;
+  width: 4.68vw;
+  height: 4.68vw;
+  background-color: rgba(45,184,184,0.9);
+  fill: #ffffff;
+  padding: 1.2vw;
+  cursor: pointer;
+}
 
 /* Large Devices, Wide Screens */
 
