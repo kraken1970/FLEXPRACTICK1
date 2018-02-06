@@ -1,3 +1,8 @@
+@keyframes bounce {
+  0% { transform: translateX(15vw); }
+  100% { transform: translateX(0); }
+}
+
 * {
   box-sizing: border-box;
 }

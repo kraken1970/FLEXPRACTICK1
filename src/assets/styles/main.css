@@ -1,3 +1,4 @@
+
 header {
   position: fixed;
   top: 0;
@@ -188,4 +189,45 @@ main {
   fill: #ffffff;
   padding: 1.2vw;
   cursor: pointer;
+}
+
+#info_box {
+  z-index: 5;
+  width: 14.739vw;
+  height: 6.77vw;
+  position: fixed;
+  right: 0;
+  top: 4.68vw;
+  background-color: #333333;
+  padding: 1.04vw;
+  display: flex;
+  flex-flow: column nowrap;
+  align-content: space-around;
+  justify-content: space-between;
+  align-items: start;
+  li {
+    color: #ffffff;
+    font-size: 0.83vw;
+    display: block;
+    height: 1.2vw;
+    padding-left: 2.5vw;
+    background: url('/assets/images/ib-icon1.png') no-repeat center left;
+  }
+  li:nth-child(2) {
+    background-image: url('/assets/images/ib-icon2.png');
+  }
+  li:nth-child(3) {
+    background-image: url('/assets/images/ib-icon3.png');
+  }
+  animation: bounce 1s;
+}
+
+.wrap-info {
+  display: none;
+  
+}
+
+.InfoBoxShow {
+  display: block;
+  
 }
