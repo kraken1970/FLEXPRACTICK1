@@ -16,7 +16,7 @@ header {
 
 #logo{
   width: 100%;
-  height: 11.57vh;
+  min-height: 11.57vh;
   background-color: #ffffff;
    img {
     height: 5.64vh;
@@ -198,7 +198,7 @@ main {
   position: fixed;
   right: 0;
   top: 4.68vw;
-  background-color: #333333;
+  background-color: rgba(0,0,0,0.7);
   padding: 1.04vw;
   display: flex;
   flex-flow: column nowrap;
@@ -209,7 +209,7 @@ main {
     color: #ffffff;
     font-size: 0.83vw;
     display: block;
-    height: 1.2vw;
+    line-height: 1.2vw;
     padding-left: 2.5vw;
     background: url('/assets/images/ib-icon1.png') no-repeat center left;
   }
